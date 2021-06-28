@@ -12,8 +12,8 @@ from secretVariables import *
 
 def createWSR():
     for i in range(0,len(landmassReports)):
-        for j in range(0, len(landmassSubs)):
-            dirName = str(rootDir) + '/' + str(weeklyTasks[0]) + '/' + str(landmassReports[i]) + '/' + str(landmassSubs[j])
+        for j in range(0, len(subsReports)):
+            dirName = str(rootDir) + '/' + str(weeklyTasks[0]) + '/' + str(landmassReports[i]) + '/' + str(subsReports[j])
 
             if not os.path.exists(dirName):
                 os.makedirs(dirName)
@@ -23,8 +23,8 @@ def createWSR():
 
 def createMinutes():
     for i in range(0,len(landmassMinutes)):
-        for j in range(0, len(landmassSubs)):
-            dirName = str(rootDir) + '/' + str(weeklyTasks[1]) + '/' + str(landmassMinutes[i]) + '/' + str(landmassSubs[j])
+        for j in range(0, len(subsMinutes)):
+            dirName = str(rootDir) + '/' + str(weeklyTasks[1]) + '/' + str(landmassMinutes[i]) + '/' + str(subsMinutes[j])
 
             if not os.path.exists(dirName):
                 os.makedirs(dirName)
